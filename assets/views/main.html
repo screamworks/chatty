@@ -10,7 +10,7 @@
 	</form>
 
   <div ng-repeat="message in messages track by $index">
-  {{message.message}} : {{message.time}}
+  {{message.message}} : {{message.time | date:"shortTime"}}
 </div>
 
 </div>
